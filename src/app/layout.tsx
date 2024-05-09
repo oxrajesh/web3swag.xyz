@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 import { AppHeader } from "@/app/components/AppHeader";
@@ -21,6 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-691NS9X98S"></Script>
+      <Script src="/assets/js/analytics.js"></Script>
       <body className={inter.className}>
         <Web3Modal>
           <Flowbite>
