@@ -2,7 +2,9 @@
 import { createWeb3Modal, defaultConfig } from "@web3modal/ethers/react";
 import { supportedChains } from "@/app/utils/networks";
 
-const projectId = process.env.NEXT_PUBLIC_WEB3MODAL_API_KEY;
+const projectId = process.env.NEXT_PUBLIC_WEB3MODAL_API_KEY
+  ? process.env.NEXT_PUBLIC_WEB3MODAL_API_KEY
+  : "get-your-project-id-from-walletconnect";
 
 const metadata = {
   name: "Web3Swag",
