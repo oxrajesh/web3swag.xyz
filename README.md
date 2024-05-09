@@ -52,6 +52,9 @@ Before you begin, ensure you have the following installed on your development ma
    ```bash
    npm run dev
    ```
+4. Web3Modal Project Id:
+
+   Obtain projectId from Web3Modal
 
 ### Usage
 
